@@ -1,7 +1,7 @@
 # ProxiesFood proxy examples
 
 Code examples for [ProxiesFood](https://proxiesfood.com) unlimited residential and datacenter proxies: cURL, Python,
-Node.js, PHP, Go, Java, C#, Scrapy, Puppeteer, Playwright and Selenium, over HTTP(S) and SOCKS5.
+Node.js, PHP, Go, Java, C#, Scrapy, Puppeteer, Playwright and Selenium, over HTTP(S) and SOCKS5, with UDP over SOCKS5.
 
 Every plan uses one host and port:
 
@@ -28,11 +28,20 @@ Add options to the end of the username. They work the same over HTTP(S) and SOCK
 |---|---|---|
 | Rotating | `USERNAME` | A new IP on every request |
 | Country | `USERNAME-country-US` | IPs from one country (two-letter code) |
+| State | `USERNAME-country-US-state-texas` | IPs from one state (name or code, after a country) |
+| City | `USERNAME-country-US-city-dallas` | IPs from one city (after a country) |
 | Sticky session | `USERNAME-session-a1b2c3-time-10m` | The same IP for the time set, up to 24 hours (`s`, `m` or `h`) |
 | Fast pool | `USERNAME-pool-fast` | Only IPs that answer in under 1000 ms (unlimited residential) |
 | Together | `USERNAME-pool-fast-country-US-session-a1b2c3-time-10m` | All of the above |
 
 A new session name gives a new IP.
+
+The dashboard lists the states and cities you can pick for each country.
+
+## UDP
+
+SOCKS5 carries UDP on the same host, port and login: point an app that supports SOCKS5 UDP (UDP ASSOCIATE) at
+`socks5://USERNAME:PASSWORD@proxies.proxiesfood.com:81`. Country, state, city and session options work the same.
 
 ## Examples
 
