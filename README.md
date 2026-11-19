@@ -63,8 +63,8 @@ Browsers and Scrapy use the HTTP side.
 
 ## Plans
 
-- **Unlimited residential:** priced by speed, 100 Mbps to 1 Gbps, no GB or thread limit, 40M+ IPs in 200+ countries.
-- **Unlimited datacenter:** 1,000 to 30,000 threads, no GB limit, 50K+ IPs.
+- **Unlimited residential:** priced by speed, 100 Mbps to 1 Gbps, no GB or thread limit, 40M+ IPs in 150+ countries.
+- **Unlimited datacenter:** 1,000 to 30,000 threads, no GB limit, 70K+ IPs.
 - **Bandwidth residential:** by the GB, from $0.20 per GB.
 
 Prices: [proxiesfood.com](https://proxiesfood.com). Free trial: [@proxiesfoodbot](https://t.me/proxiesfoodbot) on Telegram.
